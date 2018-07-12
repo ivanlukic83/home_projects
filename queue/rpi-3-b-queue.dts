@@ -1,0 +1,35 @@
+/*
+ * Queue sensor DTS
+ */
+ 
+#include <dt-bindings/interrupt-controller/irq.h>
+#include "bcm2710-rpi-3-b.dts"
+
+
+// have a look at:
+// Documentation/gpio/board.txt
+
+// / {
+//   
+//   
+//   
+//   queue {
+//     queue-gpios = <&gpio0 30 GPIO_ACTIVE_HIGH>, // P9_11
+//                      <&gpio0 31 GPIO_ACTIVE_HIGH>; // P9_13
+//     pinctrl-0 = <&pinctrl_gpio_queue>;
+//     pinctrl-names = "default";
+//     status = "okay";
+//  
+//     interrupt-parent = <&gpio0>;
+//     interrupts = <31 IRQ_TYPE_LEVEL_HIGH>;
+//   };
+//   
+// };
+
+&i2c1 {
+  queue: tsl2561@39 {
+    compatible = "queue";
+    reg = <0x39>;
+  };
+};
+

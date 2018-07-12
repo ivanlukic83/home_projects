@@ -1,0 +1,14 @@
+*.o
+*.ko
+*.mod.c
+scripts/kconfig
+source
+modules.order
+deleted:
+.cproject
+.project
+.settings/*
+.tmp_versions/*
+Module.symvers
+.queue.*
+/.cache.mk

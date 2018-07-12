@@ -1,0 +1,1 @@
+cmd_/home/ilukic/projects/modules/dummy/src/dummy.ko := arm-poky-linux-gnueabi-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/ilukic/projects/modules/dummy/src/dummy.ko /home/ilukic/projects/modules/dummy/src/dummy.o /home/ilukic/projects/modules/dummy/src/dummy.mod.o
